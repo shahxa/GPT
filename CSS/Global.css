@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+:root {
+  --bg-color: linear-gradient(142deg, rgb(0, 33, 68) 0%, rgb(4, 44, 85) 98%);
+  --btn-color: #ff5349;
+  --white-color: #fff;
+  --heading-color: #bd76d6;
+  --para-color: #355378;
+  --input-inner: #062d56;
+  --brand-color: #d5e8f4;
+}
+body {
+  /* background: linear-gradient(142deg, rgb(0, 33, 68) 0%, rgb(4, 44, 85) 98%); */
+  background: var(--bg-color);
+  height: 100vh;
+  color: var(--white-color);
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

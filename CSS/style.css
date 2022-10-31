@@ -1,0 +1,183 @@
+/* navigation  */
+.navigation {
+  padding: 6rem 0;
+}
+.navigation .container {
+  position: relative;
+  max-width: 1300px;
+  width: 100%;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 5rem;
+  font-family: "poppins";
+  color: var(--brand-color);
+}
+.nav-links {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links ul li {
+  display: inline-block;
+  margin: 0 3rem;
+  font-family: "Raleway", sans-serif;
+  color: #586f8b;
+}
+a {
+  font-size: 1.8rem;
+  color: var(--white-color);
+}
+.buttons li {
+  display: inline-block;
+  margin: 1rem;
+}
+.btn-primary {
+  padding: 1rem 2rem;
+  background: var(--btn-color);
+  border-radius: 8px;
+}
+.toggle-btn {
+  display: none;
+  position: absolute;
+  font-size: 4rem;
+  top: 0px;
+  right: 5rem;
+}
+@media only screen and (max-width: 1150px) {
+  .navigation .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+  }
+  .nav-links ul li {
+    display: block;
+    margin: 3rem 0;
+    width: 100%;
+  }
+  .nav-links.show {
+    display: block;
+  }
+}
+
+/* hero section  */
+.hero-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hero-title {
+  font-size: 3.4rem;
+  color: var(--heading-color);
+  line-height: 1.2;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 1.8rem;
+  font-family: "Raleway";
+  line-height: 1.5;
+  width: 90%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.email-input form {
+  position: relative;
+}
+.email-input form input {
+  width: 100%;
+  padding: 1.5rem;
+}
+.email-input form input::placeholder {
+  color: var(--para-color);
+}
+form .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-radius: 0%;
+  color: white;
+}
+
+.hero-img img {
+  width: 400px;
+  object-fit: cover;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-wrapper {
+    flex-direction: row;
+  }
+  .hero-title {
+    width: 100%;
+    text-align: left;
+    font-size: 5rem;
+  }
+  .hero-text {
+    width: 90%;
+    text-align: left;
+  }
+  .hero-info {
+    flex: 3;
+  }
+  .hero-img {
+    flex: 2;
+    text-align: center;
+  }
+}
+
+/* profile icon */
+#profile-icon {
+  padding: 8rem;
+}
+.profile-icon-wrapper li {
+  color: var(--para-color);
+  font-size: 2rem;
+}
+.profile-icon-wrapper {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  align-items: center;
+  gap: 3rem;
+}
+@media only screen and (min-width: 768px) {
+  .profile-icon-wrapper {
+    flex-direction: row;
+  }
+}
